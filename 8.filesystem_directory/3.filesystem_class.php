@@ -49,9 +49,9 @@ $directory = new Dir(getcwd());
 print_r($directory->getDirectories());
 print_r($directory->getFiles());
 
-$learningPhp = $directory->getDirectory(1);
-print_r($learningPhp->getDirectories());
+$oop = $directory->getDirectory(5);
+print_r($oop->getDirectories());
+print_r($oop->getFiles());
 
-$opp = $learningPhp->getDirectory(4);
-print_r($opp->getDirectories());
-print_r($opp->getFiles());
+$namespaces = $oop->getDirectory(1);
+print_r($namespaces->getFiles());
