@@ -77,3 +77,5 @@ unset($pulser->mileage);
 $pulser->run('100km', '120km'); // when call unset method then work __call of __callStatic function
 echo  "\n";
 MotorCycle::wash();
+echo "\n";
+$pulser->getMileage('50km');

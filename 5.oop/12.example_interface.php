@@ -36,7 +36,7 @@ $districts->add('Rangpur');
 $districts->add('Khulna');
 $districts->add('Dhaka');
 
-$districtList = $districts->getDistricts(); // in class we can't loop directely with out nor say i am gonna make loop. that's why here first store all district then loop.
+$districtList = $districts->getDistricts(); // in class we can't loop directely with out not say i am gonna make loop. that's why here first store all district then loop.
 print_r($districtList);
 foreach ($districtList as $district) {
     echo $district . "\n";

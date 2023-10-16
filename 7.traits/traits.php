@@ -63,10 +63,13 @@ class MyClassB
 MyClassA::$number = 2;
 MyClassB::$number = 8;
 echo MyClassA::$number;
-
+echo PHP_EOL;
 $ma = new MyClassA();
 $mb = new MyClassB();
 echo $ma::$number;
+echo PHP_EOL;
 
 echo MyClassB::$number;
+echo PHP_EOL;
+
 echo $mb::$number;

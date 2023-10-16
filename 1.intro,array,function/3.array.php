@@ -3,28 +3,28 @@
 // array
 
 // $students = array(
-// "Rauf",
-// "Rupok",
-// "Islam",
-// "Madedi",
-// "Ali",
-// "Foysal"
+//     "Rauf",
+//     "Rupok",
+//     "Islam",
+//     "Madedi",
+//     "Ali",
+//     "Foysal"
 // );
 
-// for ($i = 0; $i < count($students); $i++) {
+// for ($i = 0; $i < count($st          udents); $i++) {
 // echo "$students[$i] \n" ;
 // } 
-// $n=count($students); 
-// for ($i=$n - 1; $i>= 0; $i--) {
-// echo "$students[$i] \n";
+// $n = count($students);
+// for ($i = $n - 1; $i >= 0; $i--) {
+//     echo "$students[$i] \n";
 // }
-// $students[] = "Rakib";
+//$students[] = "Rakib";
 // array_pop($students);
 // array_shift($students);
 // array_push($students, "Neloy");
-// array_unshift($students, "Rauf");
+// array_unshift($students, "Rehan");
 // foreach ($students as $student) {
-// echo "$student \n";
+//     echo "$student \n";
 // }
 
 // $foods = [
@@ -136,6 +136,7 @@
 // $random = ['a' => 122, 'b' => 234, 'c' => 234, 12 => 123];
 // $someRandom = array_slice($random, 1, 5, true);
 // print_r($someRandom);
+// print_r($random);
 
 // **array cutting
 
@@ -271,6 +272,6 @@
 //         echo $number . "\n";
 // }
 
-$number = range(10, 50);
-$random = mt_rand(1, 10);
-echo $number[$random];
+// $number = range(10, 50);
+// $random = mt_rand(1, 10);
+// echo $number[$random];

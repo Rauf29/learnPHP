@@ -51,6 +51,6 @@ class DataManager
     }
 }
 $file = new Storage("./tmp/abcd.txt");
-$file->setMode(FILE_APPEND);
+$file->setMode(FILE_APPEND); // file_append = write data
 $dm = new DataManager();
 $dm->saveData($file, "My name is Rauf 1");

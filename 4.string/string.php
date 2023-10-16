@@ -31,7 +31,7 @@
 // $sentence = 'I am Rauf and i am a web devloper';
 // echo $sentence[0];
 // echo PHP_EOL;
-// echo $sentence[7];
+//  echo $sentence[7];
 // echo PHP_EOL;
 // echo substr($sentence, 4, 7);
 // echo PHP_EOL;
@@ -150,8 +150,8 @@
 
 // ** use of scanf
 
-//$person = "Rauf Kushtia 01303204028 rauf.official@gmail.com 23";
-// $parts = sscanf($person, "%s %s %11d %s %d");
-// print_r($parts);
+$person = "Rauf Kushtia 01303204028 rauf.official@gmail.com 23";
+$parts = sscanf($person, "%s %s %11d %s %d");
+print_r($parts);
 // sscanf($person, "%s %s %11d %s %d", $name, $address, $number, $gmail, $age);
 // echo $name;

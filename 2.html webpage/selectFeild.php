@@ -29,11 +29,12 @@
                     function addFruits($options, $selectedFruits)
                     {
                         foreach ($options as $option) {
+                            $option = strtolower($option);
                             $selected = '';
-                            if (in_array(strtolower($option), $selectedFruits)) {
-                                echo $selected = 'selected';
+                            if (in_array($option, $selectedFruits)) {
+                                $selected = 'selected';
                             }
-                            printf("<option value='%s' %s >%s</option> \n ", strtolower($option), $selected, ucwords($option));
+                            printf("<option value='%s' %s> %s </option> \n ", $option, $selected, ucwords($option));
                         }
                     }
 
@@ -52,10 +53,12 @@
                         <form action="" method="POST">
 
                             <label for="fruits">Select Some Fruits</label>
-                            <select style="height:250px;" name="fruits[]" id="fruits" multiple>
+                            <select style="height:200px;" name="fruits[]" id="fruits" multiple>
                                 <option value="" disabled selected> Select Some Fruits</option>
                                 <option value="mango">Mango</option>
-                                <?php addFruits($fruits, $sFruits); ?>
+                                <?php
+                                addFruits($fruits, $sFruits);
+                                ?>
                             </select>
                             <button type="submit">Submit</button>
                         </form>
